@@ -1,5 +1,3 @@
-/* HTML (index.html)
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,62 +7,83 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Stylish Page</h1>
+
+  <header id="header">
+    <h1>Welcome to My Styled Page</h1>
   </header>
 
-  <section class="content">
-    <h2>About Us</h2>
-    <p>This is a simple webpage that demonstrates styling with CSS.</p>
-    <img src="https://via.placeholder.com/400" alt="Placeholder Image">
-  </section>
+  <main>
+    <section class="intro">
+      <h2>Introduction</h2>
+      <p>This is a simple webpage styled with CSS. It uses classes, IDs, margins, paddings, and borders to enhance the design.</p>
+    </section>
 
-  <footer>
-    <p>Footer Content</p>
-  </footer>
+    <section class="image-container">
+      <h2>Image Example</h2>
+      <img src="https://via.placeholder.com/300" alt="Placeholder Image" class="styled-image">
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 My Website</p>
+    </footer>
+  </main>
+
 </body>
 </html>
 
-/* CSS (style.css)
 
-/* Styling the body and setting a font */
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
+/* External CSS (style.css) */
+
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Styling the header */
-header {
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
   padding: 20px;
 }
 
-/* Styling the content section using a class selector */
-.content {
-  margin: 20px;
+/* Header Styling using ID Selector */
+#header {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+/* Section Styling using Class Selector */
+.intro {
+  background-color: #fff;
   padding: 15px;
-  border: 2px solid #4CAF50;
-  background-color: white;
+  margin: 20px 0;
+  border: 2px solid #ddd;
   border-radius: 8px;
 }
 
-/* Styling the image to make it responsive */
-.content img {
+/* Image Styling using Class Selector */
+.styled-image {
   width: 100%;
+  max-width: 300px;
   height: auto;
-  border: 3px solid #4CAF50;
+  border: 5px solid #3498db;
+  margin-top: 20px;
   border-radius: 8px;
 }
 
-/* Styling the footer */
-footer {
+/* Footer Styling using Class Selector */
+.footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
+  border-radius: 8px;
 }
